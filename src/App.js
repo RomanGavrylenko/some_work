@@ -20,7 +20,12 @@ class App extends Component {
             <Route exact path="/" component={HomePage} />
             <Route path="/notes" component={NotesPage} />
             <Route path="/artists/:artistId*" component={ArtistsPage} />
-            <Route path="/artworks" component={ArtworksPage} />
+            <Route 
+              path="/artworks"
+              render={({ location }) => {
+                return <ArtworksPage  id={location.state && location.state.id} />
+              }}
+              />
           </Switch>
         </HashRouter>
       </Provider>

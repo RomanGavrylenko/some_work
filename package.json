@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
+    "lodash.uniqueid": "^4.0.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-modal": "^3.8.1",
